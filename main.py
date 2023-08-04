@@ -25,3 +25,11 @@ print(passwordStr);
 
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
+newPasswordList = []
+newPassword = ""
+for each in passwordStr:
+    newPasswordList.append(each)
+random.shuffle(newPasswordList)
+for each in newPasswordList:
+    newPassword += each
+print(newPassword)
